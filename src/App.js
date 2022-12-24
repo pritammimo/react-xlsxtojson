@@ -147,14 +147,15 @@ function App() {
         <CardHeader className="border-0">
          <Row>
          <Col  xs="6">
-                  <FormGroup>
+                  <FormGroup >
           <Input type="select" 
-          name="select" id="exampleSelect" 
+          name="select"
+           id="exampleSelect" 
           value={sort}
           onChange={handleChange}
-          className="w-50 ms-4">
-            <option value="0">Descending Order</option>
-            <option value="1">Ascending Order</option>
+          className="w-50 ms-4 cursor">
+            <option value="0" >Descending Order</option>
+            <option value="1" >Ascending Order</option>
           </Input>
         </FormGroup>
                   </Col>
@@ -219,18 +220,16 @@ function App() {
         <Row className="mt-5 mb-5">
           <Col xs="6" className="d-flex" >
             {isloadingstate2 ?
-            
             <i className="fas fa-download ms-5 size color-change"  >
-              {console.log("Hello")}
             </i>
-            :<i className="fas fa-download ms-5 size" onClick={handlepdf} ></i>
+            :<i className="fas fa-download ms-5 size cursor" onClick={handlepdf} ></i>
           }
           
           
           </Col>
           <Col xs="6" className="d-flex justify-content-end">
             {pagecount >1 && 
-            <MDBPagination circle className='me-5'>
+            <MDBPagination circle className='me-5 cursor'>
               {pagerow>5 && 
                <MDBPaginationItem>
                <MDBPaginationLink  aria-label='Previous' onClick={()=>setPagerow((prev)=>prev-5)}>
