@@ -142,7 +142,7 @@ function App() {
     </Col> 
         </Row>
         <Row className="flex-grow-1">
-        <div className="col">
+        {/* <div className="col"> */}
         <Card >
         <CardHeader className="border-0">
          <Row>
@@ -159,9 +159,9 @@ function App() {
           </Input>
         </FormGroup>
                   </Col>
-                  <Col  xs="6">
+                  <Col  xs="6" >
                   
-    <MDBInputGroup className="justify-content-end ">
+    <MDBInputGroup className="justify-content-end " >
       <MDBInput 
       value={searchvalue}
       label='Search with wallet address' 
@@ -178,7 +178,7 @@ function App() {
                
               </CardHeader>
                
-              <MDBTable>
+              <MDBTable responsive>
       <MDBTableHead dark>
         <tr>
           <th scope='col'>Txhash</th>
@@ -214,7 +214,7 @@ function App() {
     </MDBTable>
         </Card>
        
-        </div>
+        {/* </div> */}
         
         </Row>
         <Row className="mt-5 mb-5">
